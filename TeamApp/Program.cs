@@ -1,5 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using TeamApp;
 
+var calculator = new ShapeCalculator();
 
-Console.WriteLine("New commit");
+double circleArea = calculator.CalculateCircleArea(5);
+double squareArea = calculator.CalculateSquareArea(4);
+double triangleArea = calculator.CalculateTriangleArea(6, 3);
+
+Console.WriteLine($"Circle area: {circleArea}");
+Console.WriteLine($"Square area: {squareArea}");
+Console.WriteLine($"Triangle area: {triangleArea}");
