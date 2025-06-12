@@ -8,7 +8,7 @@ public static class MathService
         {
             throw new ArgumentException("Radius must be a positive number.");
         }
-        return Math.PI* radius *radius;
+        return Math.PI * radius * radius;
     }
     public static double GetSquareArea(double side)
     {
