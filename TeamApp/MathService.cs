@@ -1,17 +1,38 @@
 ﻿namespace TeamApp;
 
-public class MathService
+public static class MathService
 {
-    public double GetCircleArea(double r)
+    public static void GetCircleArea()
     {
-        return Math.PI * r * r;
+        Console.Write("\nEnter circle radius: ");
+        if (!double.TryParse(Console.ReadLine(), out double radius))
+        {
+            Console.WriteLine("\nEnter valid radius!\n");
+        }
+
+        Console.WriteLine($"\nCircle area: {Math.PI * radius * radius}\n");
     }
-    public double GetSquareArea(double a)
+    public static void GetSquareArea()
     {
-        return a * a;
+        Console.Write("\nEnter square side: ");
+        if (!double.TryParse(Console.ReadLine(), out double side))
+        {
+            Console.WriteLine("\nEnter valid side!\n");
+        }
+        Console.WriteLine($"\nSquare area: {side * side}\n");
     }
-    public double GetTriangleArea(double a,double h)
+    public static void GetTriangleArea()
     {
-        return 0.5 * a * h;
+        Console.Write("\nEnter the base of the triangle: ");
+        if (!double.TryParse(Console.ReadLine(), out double triangleBase))
+        {
+            Console.WriteLine("\nEnter valid base!\n");
+        }
+        Console.Write("\nEnter the height of the triangle: ");
+        if (!double.TryParse(Console.ReadLine(), out double triangleHeight))
+        {
+            Console.WriteLine("\nEnter valid height!\n");
+        }
+        Console.WriteLine($"\nTriangle area: {0.5 * triangleBase * triangleHeight}\n");
     }
 }
