@@ -2,19 +2,32 @@
 {
     public class Area​​Figures
     {
-        public double AreaTriangle(double baseLength, double height)
+        static public double AreaTriangle(double baseLength, double height)
         {
+            if (baseLength < 0 || height < 0)
+            {
+                throw new ArgumentException("Base length and height must be non-negative.");
+            }
             return 0.5 * baseLength * height;
         }
 
 
-        public double AreaCircle(double radius)
+        static public double AreaCircle(double radius)
         {
+            if (radius < 0)
+            {
+                throw new ArgumentException("Radius must be non-negative.");
+            }
             return Math.PI * radius * radius;
         }
 
-        public double AreaSquare(double sideLength)
+
+        static public double AreaSquare(double sideLength)
         {
+            if (sideLength < 0)
+            {
+                throw new ArgumentException("Side length must be non-negative.");
+            }
             return sideLength * sideLength;
         }
     }
