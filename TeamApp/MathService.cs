@@ -2,37 +2,33 @@
 
 public static class MathService
 {
-    public static void GetCircleArea()
+    public static double GetCircleArea(double radius)
     {
-        Console.Write("\nEnter circle radius: ");
-        if (!double.TryParse(Console.ReadLine(), out double radius))
+        if (radius <= 0)
         {
-            Console.WriteLine("\nEnter valid radius!\n");
+            throw new ArgumentException("Radius must be a positive number.");
+        }
+        return Math.PI* radius *radius;
+    }
+    public static double GetSquareArea(double side)
+    {
+        if (side <= 0)
+        {
+            throw new ArgumentException("Side must be a positive number.");
+        }
+        return side * side;
+    }
+    public static double GetTriangleArea(double triangleBase, double triangleHeight)
+    {
+        if (triangleBase <= 0)
+        {
+            throw new ArgumentException("Base must be a positive number.");
         }
 
-        Console.WriteLine($"\nCircle area: {Math.PI * radius * radius}\n");
-    }
-    public static void GetSquareArea()
-    {
-        Console.Write("\nEnter square side: ");
-        if (!double.TryParse(Console.ReadLine(), out double side))
+        if (triangleHeight <= 0)
         {
-            Console.WriteLine("\nEnter valid side!\n");
+            throw new ArgumentException("Height must be a positive number.");
         }
-        Console.WriteLine($"\nSquare area: {side * side}\n");
-    }
-    public static void GetTriangleArea()
-    {
-        Console.Write("\nEnter the base of the triangle: ");
-        if (!double.TryParse(Console.ReadLine(), out double triangleBase))
-        {
-            Console.WriteLine("\nEnter valid base!\n");
-        }
-        Console.Write("\nEnter the height of the triangle: ");
-        if (!double.TryParse(Console.ReadLine(), out double triangleHeight))
-        {
-            Console.WriteLine("\nEnter valid height!\n");
-        }
-        Console.WriteLine($"\nTriangle area: {0.5 * triangleBase * triangleHeight}\n");
+        return 0.5 * triangleBase * triangleHeight;
     }
 }
