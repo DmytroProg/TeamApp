@@ -1,6 +1,6 @@
 ﻿namespace TeamApp
 {
-    public class Area​​Figures
+    public static class Area​​Figures
     {
 
         /// <summary>
@@ -10,7 +10,7 @@
         /// <param name="height"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentException"></exception>
-        static public double AreaTriangle(double baseLength, double height)
+        public static double AreaTriangle(double baseLength, double height)
         {
             if (baseLength < 0 || height < 0)
             {
@@ -26,7 +26,7 @@
         /// <param name="radius">The radius of the circle. Must be non-negative.</param>
         /// <returns>The area of the circle as a <see cref="double"/>.</returns>
         /// <exception cref="ArgumentException">Thrown if <paramref name="radius"/> is negative.</exception>
-        static public double AreaCircle(double radius)
+        public static double AreaCircle(double radius)
         {
             if (radius < 0)
             {
@@ -41,7 +41,7 @@
         /// <param name="sideLength">The length of one side of the square. Must be non-negative.</param>
         /// <returns>The area of the square, calculated as the square of <paramref name="sideLength"/>.</returns>
         /// <exception cref="ArgumentException">Thrown if <paramref name="sideLength"/> is negative.</exception>
-        static public double AreaSquare(double sideLength)
+        public static double AreaSquare(double sideLength)
         {
             if (sideLength < 0)
             {
