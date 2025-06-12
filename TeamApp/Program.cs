@@ -1,5 +1,7 @@
 ﻿Console.WriteLine("New commit");
 
+Console.WriteLine("Hello world!");
+Console.WriteLine("New commit");
 Console.WriteLine("123");
 static void ShowMenu()
 {
