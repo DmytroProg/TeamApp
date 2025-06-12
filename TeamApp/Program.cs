@@ -15,3 +15,27 @@ while (true)
     var option = Console.ReadLine();
 
 }
+while (true)
+{
+    ShowMenu();
+    var option = Console.ReadLine();
+
+}
+while (true)
+{
+    ShowMenu();
+    var option = Console.ReadLine();
+
+}
+while (true)
+{
+    ShowMenu();
+    var option = Console.ReadLine();
+
+}
+while (true)
+{
+    ShowMenu();
+    var option = Console.ReadLine();
+
+}
