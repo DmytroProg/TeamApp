@@ -3,3 +3,6 @@ Console.WriteLine("Hello, World!");
 
 
 Console.WriteLine("New commit");
+
+
+Console.WriteLine("New commit SashaM");
