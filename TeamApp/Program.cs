@@ -1,4 +1,6 @@
-﻿Console.WriteLine("New commit");
+﻿using TeamApp;
+
+Console.WriteLine("New commit");
 
 Console.WriteLine("Hello world!");
 Console.WriteLine("New commit");
@@ -16,3 +18,5 @@ while (true)
     var option = Console.ReadLine();
 
 }
+
+Validator.IsPasswordValid("123");
