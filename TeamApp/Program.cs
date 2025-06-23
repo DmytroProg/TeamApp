@@ -1,4 +1,5 @@
-﻿Console.WriteLine("New commit");
+﻿using TeamApp;
+/*Console.WriteLine("New commit");
 
 Console.WriteLine("Hello world!");
 Console.WriteLine("New commit");
@@ -15,4 +16,14 @@ while (true)
     ShowMenu();
     var option = Console.ReadLine();
 
-}
+}*/
+
+
+string phone = "+380964103615";
+Console.WriteLine(Validator.IsPhoneNumberValid(phone));
+
+string password = "Password1!";
+Console.WriteLine(Validator.IsPasswordValid(password));
+
+string email = "example@gmail.com";
+Console.WriteLine(Validator.IsEmailValid(email));
